@@ -1,0 +1,129 @@
+<! q1.--(1)console.log(): This method writes message to the console. The console is used for testing purposes.
+(2)console.assert(): This method writes an error message to the console if the assertion is false. If the assertion is true, nothing happens. 
+(3)console.count(): This method logs the number of times that this particular call to count() has been called.
+(4)console.clear(): This method clears the console if the environment allows it.
+-->
+
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="utf=8"/>
+        <title>Q1</title>    
+    </head>
+    <body>
+        <script>
+            const errorMsg = 'the number is not even';
+            for (let number = 2; number <= 5; number += 1) 
+            {
+                console.log('the number is ' + number);
+                console.assert(number % 2 === 0, {number: number, errorMsg: errorMsg});
+            }
+
+        </script>
+            <script>
+            let user = "";
+
+            function greet() {
+              console.count();
+              return "hi " + user;
+            }
+            
+            user = "bob";
+            greet();
+            user = "alice";
+            greet();
+            greet();
+            console.count();
+             </script>
+        <script>
+            console.clear();
+        </script> 
+    </body>
+</html>
+
+
+<!Q2.-- (1)'var' declarations are globally scoped or function scoped while 'let' and 'const' are block scoped.
+    (2)'var' variables can be updated and re-declared within its scope; 'let' variables can be updated but not re-declared; 'const' variables can neither be updated nor re-declared.
+    (3) They are all hoisted to the top of their scope but while 'var' variables are initialized with undefined, 'let' and 'const' variables are not initialized.
+    (4)While 'var' and 'let' can be declared without being initialized, 'const' must be initialized during declaration.
+
+
+
+-->
+
+
+
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="utf=8"/>
+        <title>Q2</title>    
+    </head>
+    <body>
+        <script>
+            var company=                            //var 
+            {
+            name:"Google",
+            domain:"Web Devlopment",
+            salary: "$20,000",
+            }
+            console.table(company);
+        </script>
+
+        <script>
+            {
+                let greeting = "say Hi";                      //let      
+                if (true) 
+                    {
+                        let greeting = "say Hello instead";
+                        console.log(greeting);
+                    }
+                 console.log(greeting);
+                    
+            }
+        </script>
+
+        <script>
+            {
+                const pi = "3.144444";
+                pi= "3.142";
+                console.log(pi); //will give an error
+            }
+        </script>    
+
+        <script>
+            {
+                const a="5";
+                console.log(a); //will give output as 5
+            }
+        </script>
+        
+    </body>
+</html> 
+
+<!-- Q3.Data types basically specify what kind of data can be stored and manipulated within a program.
+
+There are six basic data types in JavaScript which can be divided into three main categories: primitive (or primary), composite (or reference), and special data types. String, Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types. Whereas Undefined and Null are special data types.
+Primitive data types can hold only one value at a time, whereas composite data types can hold collections of values and more complex entities. Let's discuss each one of them in detail.
+(1)The String Data Type
+The string data type is used to represent textual data (i.e. sequences of characters). Strings are created using single or double quotes surrounding one or more characters
+
+(2)The Number Data Type
+The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation e.g. 1.5e-4 (equivalent to 1.5x10-4).
+The Number data type also includes some special values which are: Infinity, -Infinity and NaN. Infinity represents the mathematical Infinity ∞, which is greater than any number. Infinity is the result of dividing a nonzero number by 0
+While NaN represents a special Not-a-Number value. It is a result of an invalid or an undefined mathematical operation, like taking the square root of -1 or dividing 0 by 0, etc.
+
+(3)The Boolean Data Type
+The Boolean data type can hold only two values: true or false. It is typically used to store values like yes (true) or no (false), on (true) or off (false), etc. 
+
+(4)The Undefined Data Type
+The undefined data type can only have one value-the special value undefined. If a variable has been declared, but has not been assigned a value, has the value undefined.
+
+(5)The Null Data Type
+This is another special data type that can have only one value-the null value. A null value means that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.
+
+A variable can be explicitly emptied of its current contents by assigning it the null value.
+
+(6)The Object Data Type
+The object is a complex data type that allows you to store collections of data.
+
+An object contains properties, defined as a key-value pair. A property key (name) is always a string, but the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, function and other objects.
+-->
