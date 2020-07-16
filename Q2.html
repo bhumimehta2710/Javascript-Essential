@@ -1,0 +1,57 @@
+<!-- (1)'var' declarations are globally scoped or function scoped while 'let' and 'const' are block scoped.
+    (2)'var' variables can be updated and re-declared within its scope; 'let' variables can be updated but not re-declared; 'const' variables can neither be updated nor re-declared.
+    (3) They are all hoisted to the top of their scope but while 'var' variables are initialized with undefined, 'let' and 'const' variables are not initialized.
+    (4)While 'var' and 'let' can be declared without being initialized, 'const' must be initialized during declaration.
+
+
+
+-->
+
+
+
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="utf=8"/>
+        <title>Q2</title>    
+    </head>
+    <body>
+        <script>
+            var company=                            //var 
+            {
+            name:"Google",
+            domain:"Web Devlopment",
+            salary: "$20,000",
+            }
+            console.table(company);
+        </script>
+
+        <script>
+            {
+                let greeting = "say Hi";                      //let      
+                if (true) 
+                    {
+                        let greeting = "say Hello instead";
+                        console.log(greeting);
+                    }
+                 console.log(greeting);
+                    
+            }
+        </script>
+
+        <script>
+            {
+                const pi = "3.144444";
+                pi= "3.142";
+                console.log(pi); //will give an error
+            }
+        </script>    
+
+        <script>
+            {
+                const a="5";
+                console.log(a); //will give output as 5
+            }
+        </script>
+        
+    </body>
+</html>
