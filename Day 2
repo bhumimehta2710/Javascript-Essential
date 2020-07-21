@@ -1,0 +1,90 @@
+<!--Q1.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello!!</p>
+    <script src="Q1.js"></script>
+</body>
+</html>
+
+//q1.js
+var name= prompt("What is your name?");
+console.log(name);
+
+-->
+
+<!--Q2.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <p>Creating an Array</p>
+    <script src="Q2.js"></script>
+    <p>Add an Item at the end of array</p><br>
+    <p> Length of an Array</p><br>
+    <p> Push- Add an item at the last</p><br>
+    <p>Pop- Remove an element from last</p><br>
+    <p>Shift- Remove an Item from beginning of an array</p><br>
+    <p>Unshift Add an Item at the beginnign of an array</p><br>
+   <script src="Q2.js"></script>
+    <h1>String Methods</h1>
+    <script>
+        let a = 'United Nations'
+        let b = 'India'
+        if (a < b) { // true
+        console.log(a + ' is less than ' + b)
+        } else if (a > b) {
+        console.log(a + ' is greater than ' + b)
+        } else {
+        console.log(a + ' and ' + b + ' are equal.')
+        }
+
+    </script>
+</body>
+</html>
+
+//q2.js
+// Array methods
+let fruits =['Apple', 'Banana']
+console.log(fruits);
+console.log(fruits.length)
+let newFruit= fruits.push('Lichi') 
+console.log(fruits);
+let end = fruits.pop("Lichi");
+console.log(fruits); 
+let begin = fruits. shift();
+console.log(fruits);
+let addBegin = fruits.unshift("Strawberry")
+console.log(fruits); 
+-->
+
+<!--Q3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age= prompt("What's your age?")
+        if(age<21)
+            result="Cannot Drink";
+        else
+            result="Can Drink";
+            console.log(result);
+    </script>
+</body>
+</html>
+-->
